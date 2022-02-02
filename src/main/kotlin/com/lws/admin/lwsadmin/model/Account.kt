@@ -11,6 +11,7 @@ data class Account(
     var id: String = ObjectId().toHexString(),
     var userEmail: String,
     var userPassword: String,
+    var userNickName: String,
     var userAccessTokens: List<AccessToken>,
     var accountRoles: HashSet<Int>
 ) {
@@ -19,7 +20,8 @@ data class Account(
         userEmail = this.userEmail,
         accountRoles = accountRoles.map {
             AccountRole.values()[it]
-        }.toHashSet()
+        }.toHashSet(),
+        userNickName = this.userNickName
     )
 }
 

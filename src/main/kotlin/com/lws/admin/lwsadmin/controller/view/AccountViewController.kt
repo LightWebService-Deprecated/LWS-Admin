@@ -20,7 +20,8 @@ class AccountViewController(
                 AccountViewResponse(
                     id = it.id,
                     userEmail = it.userEmail,
-                    accountRoles = it.accountRoles
+                    accountRoles = it.accountRoles,
+                    userNickName = it.userNickName
                 )
             }
         model.addAttribute("account_list", accountList)

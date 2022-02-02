@@ -7,5 +7,10 @@ spring:
       username:
       password:
       authentication-database:
+  devtools:
+    livereload:
+      enabled: true
+  freemarker:
+    cache: false
 lws:
   gatewayAddress:
